@@ -1,0 +1,19 @@
+/* index.css */
+
+/* Sirf Google Fonts ko yahan import karein */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  
+  /* Poori site ke liye halka background color */
+  background: #f8f9fa; 
+  
+  /* Text ka default color */
+  color: #4B5563; 
+  
+  /* Smooth scrolling ke liye */
+  scroll-behavior: smooth;
+}

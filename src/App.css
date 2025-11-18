@@ -1,0 +1,291 @@
+/* App.css (NEW Teal Green Theme) */
+
+/* 1. GLOBAL STYLES */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #111827; /* Headings ke liye dark color */
+}
+
+h2 { /* Section ke headings */
+   font-size: 2.5rem;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: uppercase; /* Thoda professional look */
+   letter-spacing: 1.5px;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+/* 2. NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #ffffff; /* Safed background */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Halki shadow */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo { /* Aapka 'MyPortfolio' text */
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #0D9488; /* <<< BADAL GAYA */
+   margin: 0; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* Links ke beech thodi zyada jagah */
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+   text-decoration: none;
+   color: #333;
+   font-weight: 500;
+   transition: color 0.3s ease;
+}
+.nav-links a:hover {
+   color: #0D9488; /* <<< BADAL GAYA */
+}
+
+/* 3. HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  /* Naya, zyada professional gradient */
+  background: linear-gradient(135deg, #0D9488, #115E59); /* <<< BADAL GAYA */
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+}
+
+.hero-content .text h2 {
+   font-size: 2.5rem; /* Thoda chhota */
+   color: white;
+   margin-top: 0;
+}
+.hero-content .text h2 span { /* Aapka naam */
+   display: block;
+   font-size: 3.5rem;
+}
+/* Subtitle ke liye */
+.hero-subtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.8;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.hero-content .text p {
+   font-size: 1.1rem;
+   line-height: 1.7;
+   opacity: 0.9;
+}
+
+.hero-image img {
+  width: 300px; /* Thodi badi image */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+}
+
+/* 4. BUTTONS */
+.btn {
+  display: inline-block;
+  background: white;
+  color: #0D9488; /* <<< BADAL GAYA */
+  padding: 12px 24px; /* Behtar button size */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+   background: #f0f0f0;
+   transform: translateY(-2px); /* Halk sa upar uthega */
+}
+
+/* 5. ABOUT SECTION */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-image {
+  width: 250px; /* Thodi badi image */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px; /* Halka border radius */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  
+  /* Animation (Pehle wala) */
+  animation: fadeInUp 1s ease-out;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  
+  /* Animation (Pehle wala) */
+  animation: fadeInUp 1s ease-out 0.2s;
+  animation-fill-mode: backwards;
+}
+
+/* 6. PROJECTS SECTION */
+/* App.css mein yeh add karein */
+
+/* 6.5 SKILLS SECTION */
+.skills {
+  /* Dark background, footer jaisa */
+  background: #111827;
+  
+  /* Halka divider jo pehle tha */
+  border-top: 1px solid #e5e7eb; 
+}
+
+/* Heading ko safed (white) karein */
+.skills h2 {
+  color: #ffffff;
+}
+.skills-grid {
+  display: grid;
+  gap: 20px;
+  /* Yeh 130px se kam nahi hoga aur barabar size ka rahega */
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  max-width: 900px;
+  margin: 0 auto; /* Poore grid ko center mein rakhein */
+}
+
+.skill-card {
+  background: #ffffff; /* Card ko safed rakhein */
+  border-radius: 10px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Hover par upar uthega */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+  margin: 0;
+  font-family: "Roboto Mono", monospace; /* Techy font */
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.project-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  padding: 24px;
+  background: #ffffff; /* Card ko safed rakhein */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Halki shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+   font-size: 1.25rem;
+   margin-top: 0;
+   color: #0D9488; /* <<< BADAL GAYA */
+}
+
+.project-card p {
+   font-size: 0.95rem;
+   margin-bottom: 20px;
+}
+
+.project-card a {
+   text-decoration: none;
+   color: #0D9488; /* <<< BADAL GAYA */
+   font-weight: 600;
+   font-family: 'Roboto Mono', monospace; /* 'View' ke liye techy font */
+}
+.project-card a:hover {
+   text-decoration: underline;
+}
+
+/* 7. CONTACT SECTION */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Form ko center mein rakhein */
+}
+
+.contact input, .contact textarea {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+.contact input:focus, .contact textarea:focus {
+   outline: 2px solid #0D9488; /* <<< BADAL GAYA */
+   border-color: transparent;
+}
+
+.contact .btn { /* Contact ka button */
+   background: #0D9488; /* <<< BADAL GAYA */
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.contact .btn:hover {
+   background: #115E59; /* <<< BADAL GAYA */
+}
+
+/* 8. FOOTER */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #111827; /* Dark background */
+  color: #f8f9fa; /* Light text */
+}
+
+/* 9. KEYFRAMES (Animation ke liye) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
